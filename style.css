@@ -1,0 +1,268 @@
+/* mengimport library font google */
+
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Belanosima&family=Oswald:wght@600&family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Martian+Mono:wght@300&family=Oswald:wght@600&family=Pixelify+Sans:wght@500&family=Roboto&display=swap');
+
+
+/* mengatur semua elemen agar memiliki box-sizing: border-box dan scroll yang mulus */
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* menatur elemen body agar memiliki background warna biru,
+mengganti font, menghilangkan margin, mengatur display flex
+dan direction column */
+body {
+  background-color: #1c64ff;
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* ==================== header ==================== */
+
+
+/* menagtur lebar agar selalu 100%, 
+mengatur display flex, 
+mengatur justify-content untuk memberi jarak,  
+mengatur align-items agar selalu ditengah dan mengatur padding*/
+header.navbar-con {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-block: 1rem;
+}
+
+
+/* mengganti jenis font, ketebalan font, ukuran font, 
+mengatur text agar menjadi kapital, memberi warna putih,
+mengatur jarak antar kata, dan memberikan efek transisi */
+header .logo p {
+  font-family: 'Pixelify Sans', cursive;
+  font-weight: 800;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #ffffff;
+  letter-spacing: 0.2rem;
+  transition: all 0.2s;
+}
+
+
+/* memberikan efek ketika logo di hover */
+header .logo p:hover {
+  color: #ffffff00;
+  -webkit-text-stroke-width: 0.1px;
+  /* memberikan efek stroke  */
+  -webkit-text-stroke-color: #ffffff;
+  /* memberikan warna storke */
+}
+
+
+/* mengatur navbar agar memiliki display flex, 
+agar content selalu ditengah, dan memberi jarak */
+header.navbar-con .nav-list ul {
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem 1rem;
+}
+
+/* mengatur list agar tidak memiliki style */
+header.navbar-con .nav-list li {
+  list-style-type: none;
+}
+
+/* mengatur navbar agar tidak memiliki style
+memmberi padding, ketebalan font, ukuran font, warna
+dan border pill yang transparant dan memberikan efek transisi */
+header.navbar-con .nav-list li a {
+  text-decoration: none;
+  padding: 0.8rem 2.5rem;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #ffffff;
+  border: 3px solid transparent;
+  border-radius: 999px;
+  transition: all 0.2s ease-in-out;
+}
+
+
+/* memberikan efek warana background putih dan warna text biru
+ketika navbar di hover */
+header.navbar-con .nav-list li:hover a {
+  background-color: #ffffff;
+  color: #1c64ff;
+}
+
+
+
+/*========================= main ==========================*/
+/* mengatur lebar agar selalu 1200px, margin samping,
+padding, flex 1, display, dan align-items */
+main {
+  max-width: 1200px;
+  width: 100%;
+  margin-inline: auto;
+  padding: 3rem 4rem;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+/* mengatur class content agar memiliki padding
+warna font putih, flex dan membuat item ditengah */
+main .content {
+  padding: 0 2rem;
+  color: #ffffff;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* mengatur class content isi satu dan dua agar memiliki margin atas */
+main .content .isi-satu,
+main .content .isi-dua {
+  margin-top: 100px;
+}
+
+/* mengatur class content title satu dan dua agar memiliki ukuran font 2rem dan jarak */
+main .content .isi-satu .title-satu,
+main .content .isi-dua .title-dua {
+  font-size: 2rem;
+  margin-block: 0.5rem;
+}
+
+/* mengatur tag p didalam  class isi-deskripsi-satu dan dua agar
+ memiliki jarak dan ukuran font  */
+main .content .isi-satu .isi-deskripsi-satu p,
+main .content .isi-dua .isi-deskripsi-dua p {
+  line-height: 1.7rem;
+  font-size: 1.2rem;
+}
+
+
+/* mengatru class aside agar frame gambar bisa sesuai */
+main aside .aside-image {
+  flex: 1;
+  margin-top: 5.5rem;
+  border-radius: 50%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 50px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 26px -18px inset;
+  display: flex;
+  width: 380px;
+  height: 380px;
+  overflow: hidden;
+}
+
+/* mengatur gambar agar sesuai dengan frame */
+main aside .aside-image img {
+  margin: 0;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  max-height: 660px;
+}
+
+
+
+/*footer===================================================*/
+
+/* mengatur footer agar memiliki padding */
+footer .footer {
+  padding: 40px;
+}
+
+/* mengatur icon social agar ditengah */
+footer .footer .social {
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+/* memberikan efek transisi ketika di hover, 
+memberikan warna biru
+mengatur ukuran, lebar, dan jarak,
+memberi efek shadow dan transisi */
+footer .footer .social a {
+  font-size: 25px;
+  color: #1c64ff;
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  display: inline-block;
+  box-shadow: 2px 2px rgb(2, 2, 2);
+  border-radius: 15px;
+  background-color: #ffffff;
+  margin: 0 8px;
+  transition: all 0.2s;
+}
+
+/* memberi efek transisi, transparant dan warna ketika di hover */
+footer .footer .social a:hover {
+  opacity: 0.6;
+  box-shadow: 0px 0px black;
+  background-color: #1c64ff;
+  color: #ffffff;
+}
+
+
+
+/* memberikan efek responsive ketika berada di layar kecil handphone */
+@media screen and (max-width: 768px) {
+  header.navbar-con {
+    flex-direction: column;
+  }
+
+  header.navbar-con .nav-list ul {
+    flex-wrap: wrap;
+    column-gap: 0.5rem;
+  }
+
+  main {
+    padding: 1rem 0rem;
+    flex-direction: column;
+  }
+
+  main .content {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+
+  main .content .isi-deskripsi-satu .title,
+  main .content .isi-deskripsi-dua .title {
+    font-size: 2.2rem;
+  }
+
+  main .content .isi-satu,
+  main .content .isi-dua {
+    margin: 2rem 0.1rem;
+    font-size: 1rem;
+  }
+
+  main .content p {
+    font-size: 1rem;
+  }
+
+  main aside .aside-image {
+    margin-top: 5rem;
+  }
+
+  main aside .aside-image {
+    width: 300px;
+    height: 300px;
+  }
+
+  main aside .aside-image img {
+    margin: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  footer .footer {
+    font-size: 0.7rem;
+  }
+}
