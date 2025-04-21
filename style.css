@@ -214,55 +214,55 @@ footer .footer .social a:hover {
 @media screen and (max-width: 768px) {
   header.navbar-con {
     flex-direction: column;
+    /*membuat agar navbar diatur secara vertikal*/
   }
 
   header.navbar-con .nav-list ul {
     flex-wrap: wrap;
     column-gap: 0.5rem;
+    /* membuat navbar memilik jarak dan wrap */
   }
 
   main {
     padding: 1rem 0rem;
     flex-direction: column;
+    /* memberikan padding dan  */
   }
 
   main .content {
     flex-direction: column;
     gap: 2rem;
     padding: 0 1rem;
-  }
-
-  main .content .isi-deskripsi-satu .title,
-  main .content .isi-deskripsi-dua .title {
-    font-size: 2.2rem;
+    /* memberikan flex direction column dan jarak*/
   }
 
   main .content .isi-satu,
   main .content .isi-dua {
     margin: 2rem 0.1rem;
     font-size: 1rem;
-  }
-
-  main .content p {
-    font-size: 1rem;
+    /* mengatur margin dan font content */
   }
 
   main aside .aside-image {
     margin-top: 5rem;
+    /* mengatur margin-top class aside-image */
   }
 
   main aside .aside-image {
     width: 300px;
     height: 300px;
+    /* mengatur tinggi dan lebar class aside-image */
   }
 
   main aside .aside-image img {
     margin: 0;
     width: 100%;
     height: auto;
+    /* mengatur tinggi dan lebar gambar */
   }
 
   footer .footer {
     font-size: 0.7rem;
+    /* mengatur font footer */
   }
 }
